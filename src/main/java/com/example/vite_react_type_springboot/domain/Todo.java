@@ -29,4 +29,21 @@ public class Todo {
 
     private LocalDate dueDate;
 
+
+    //요즘에는 setter라고 안하고 change를 많이 사용한다
+    public void changeTitle(String title) {
+        this.title = title;
+    }
+
+    public void changeContent(String content) {
+        this.content = content;
+    }
+
+    public void changeComplete(boolean complete) {
+        this.complete = complete;
+    }
+
+    public void changeDueDate(LocalDate dueDate) {
+        this.dueDate = dueDate;
+    }
 }
